@@ -1,0 +1,124 @@
+@media (min-width: 600px) and (max-width: 767px) {
+    #vantagens{
+        height: 1050px;
+        display: block;
+    }
+ 
+    #content-dados, #content-vantagens{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        gap: 30px;      
+        flex-direction: column;
+    }
+
+    #content-dados{
+        margin-bottom: 100px;
+    }
+
+ 
+    .informacao, .vantagem{
+        width: 60%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacao{
+        width: 352px;
+        margin-bottom: 15px;
+    }
+
+    .informacao p{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4rem;
+    }
+ 
+    .informacao span{
+        font-size: 65px;
+        color: #2B63A9;
+        display: flex;
+    }
+ 
+    #vantagens{
+        margin-bottom: 50px;
+        
+    }
+
+    #content-vantagens{
+        height: auto;
+        padding-top: 0px;
+        gap: 30px;
+    }
+ 
+    .vantagem{
+        width: 28 0px;
+        height: 200px;
+        text-align: justify;
+        border-radius: 17px;
+        padding: 20px;
+        border: 0.5px solid #f0eded;
+        align-items: start;
+    }
+ 
+    .vantagem h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+ 
+    .vantagem p{
+        font-size: 13px;
+        line-height: 130%;        
+        font-weight: 300;
+        line-height: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-texto h2{
+        font-size: 44px;
+    }
+    
+    #conheca-empresa{
+        height: 745px;
+        background-color: #F0F2F5;
+        padding-top: 0;
+    }
+
+
+    #conheca-produto{
+        height: 800px;
+        background-color: #ffffff;
+    }
+
+    #integrantes{     
+        height: 700px;
+        gap: 20px;
+    }
+    
+    #integrantes h3{
+        font-size: 22px;
+        font-weight: 300;
+        color: #243E63;
+        display: block;
+    }
+   
+    #content-membro{
+        width: 100%;
+        height: 144px;
+        margin-top: 190px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

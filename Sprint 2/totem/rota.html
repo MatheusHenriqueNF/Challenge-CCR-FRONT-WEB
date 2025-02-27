@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Idioma</title>
+</head>
+<body>
+
+    <div id="wrapper">
+        <main>
+            <div id="container">
+                <div id="botoes" class="btn-topo">
+                    <a href="menu.html">
+                        <div class="btn-navegacao-menu">
+                            <img src="img/icon-seta.png" alt="icone de um seta para  voltar">
+                            <h3>Voltar</h3>
+                        </div>
+                    </a>
+    
+                </div>
+
+                <form action="resultado_rota.html" id="frmRota">
+                    <div class="dados-estacao">
+                        <h2>Sua estação atual</h2>
+                        <input type="text" name="origem" id="origem" class="nome_estacao" value="Vila Mariana - Linha 1 - Azul">
+                    </div>
+                    <div class="dados-estacao">
+                        <h2>Sua estação de destino</h2>
+                        <input type="text" name="destino" id="destino" class="nome_estacao" value="Oscar Freire - Linha 5 - Amarela">
+                    </div>
+
+                    <input type="submit" value="MOSTRAR ROTA" name="btn-mostrar-rota" id="btn-mostrar-rota">
+
+                </form>
+                
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQUERY PARA FAZER O BOTÃO DE MENU MOBILE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- css versão desktop (min-width = 1200px) -->
+    <link rel="stylesheet" href="css/desktop/reset.css">
+    <link rel="stylesheet" href="css/desktop/estilo.css">
+    <link rel="stylesheet" href="css/desktop/header.css">
+    <link rel="stylesheet" href="css/desktop/paginaEmpresa.css">
+    <link rel="stylesheet" href="css/desktop/paginaProduto.css">
+    <link rel="stylesheet" href="css/desktop/footer.css">
+    <!-- --------------------------------------------- -->
+
+     <!-- css versão desktop (min-width = 992px) and (max-width = 1199px) -->
+     <link rel="stylesheet" href="css/laptop/header.css">
+     <link rel="stylesheet" href="css/laptop/estilo.css">
+     <link rel="stylesheet" href="css/laptop/footer.css">
+     <link rel="stylesheet" href="css/laptop/paginaProduto.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 768px) and (max-width = 991px) -->
+    <link rel="stylesheet" href="css/tablet/tablet/header.css">
+    <link rel="stylesheet" href="css/tablet/tablet/estilo.css">
+    <link rel="stylesheet" href="css/tablet/tablet/footer.css">
+    <link rel="stylesheet" href="css/tablet/tablet/paginaProduto.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 600px) and (max-width = 767px) -->
+    <link rel="stylesheet" href="css/phone/header.css">
+    <link rel="stylesheet" href="css/phone/estilo.css">
+    <link rel="stylesheet" href="css/phone/footer.css">
+    <link rel="stylesheet" href="css/phone/paginaProduto.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 340px) and (max-width = 600px) -->
+    <link rel="stylesheet" href="css/small-phone/header.css">
+    <link rel="stylesheet" href="css/small-phone/estilo.css">
+    <link rel="stylesheet" href="css/small-phone/footer.css">
+    <link rel="stylesheet" href="css/small-phone/paginaProduto.css">
+
+
+    <title>Conheça o produto</title>
+</head>
+<body>
+    
+    <div id="wrapper"> 
+        <main>
+            <!-- sessão onde contém o cabeçalho que permite a navegação entre as páginas. Além do menu, contém uma imagem que descreve o que será o conteúdo da página. -->
+            <section class="carousel">
+
+                <!-- cabeçalho que permite navegar entre as páginas -->
+                <header>
+                    <nav id="navbar">
+                        <a href="index.html">
+                            <div id="nav_logo">
+                                <div id="logo">
+    
+                                    <picture>
+    
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 1200px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 768px) and (max-width: 991px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 600px) and (max-width: 767px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 340px) and (max-width: 599px)">
+                                        <img src="" alt="Logo da ViaSmart">
+    
+                                    </picture>
+    
+                                </div>
+    
+                                <div id="dividir"></div>
+    
+                                <span>ViaSmart</span>
+    
+                            </div>
+                        </a>
+                        <ul id="nav-lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+                    
+                        <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                    </nav>
+                    
+                    <!-- conteudo do menu quando a pagina estiver com 991px ou menos -->
+                    <div id="mobile_menu">
+                        <ul id="mobile_nav_lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+                    </div>
+ 
+ 
+                </header>
+
+                 <!-- imagem que ilustra o conteúdo a ser apresentado na página -->
+                <div class="apresentacao-conteudo">
+ 
+                    <picture>
+ 
+                        <source srcset="img/carousel3.png" media="(min-width: 1200px)">
+                        <source srcset="img/carousel3_1199.png" media="(min-width: 992px) and (max-width: 1199px)">
+                        <source srcset="img/carousel3_991.png" media="(min-width: 768px) and (max-width: 991px)">
+                        <source srcset="img/carousel3_767.png" media="(min-width: 600px) and (max-width: 767px)">
+                        <source srcset="img/carousel3_767.png" media="(min-width: 340px) and (max-width: 599px)">
+                        <img src="" alt="Imagem de apresentação do conteúdo da página" title="Imagem de apresentação do conteúdo da página">
+ 
+                    </picture>
+ 
+                    <p class="texto-apresentacao empresa">
+                        Conheça o produto <span> ViaSmart </span>
+                    </p>
+ 
+                </div>
+            </section>
+
+            <!-- apresentar o novo totem interativo  -->
+            <article>
+                <section id="conheca-produto">
+
+                
+                    <div class="conteudo-texto">
+    
+                        <h2>Conheça o produto</h2>
+                        <p>Com nosso novo totem interativo, viajar de trem ficou ainda mais simples e prático!
+                            <br><br>
+                        Imagine chegar à estação e, com apenas alguns toques, encontrar a rota mais rápida e eficiente para o seu destino. Nosso totem, equipado com inteligência artificial, te guia por todo o percurso, indicando as próximas estações, as plataformas corretas e até mesmo o tempo estimado de viagem.</p>
+    
+                    </div>
+                    <div class="conteudo-imagem img-section">
+    
+                        <picture>
+    
+                            <source srcset="img/totem.png" media="(min-width: 1200px)">
+                            <source srcset="img/totem.png" media="(min-width: 992px) and (max-width: 1199px)">
+                            <source srcset="img/totem.png" media="(min-width: 768px) and (max-width: 991px)">
+                            <source srcset="img/totem.png" media="(min-width: 600px) and (max-width: 767px)">
+                            <source srcset="img/totem.png" media="(min-width: 340px) and (max-width: 599px)">
+                            <img src="" alt="Imagem de um totem" title="Imagem de um totem que será usado nas estações">
+    
+                        </picture>
+    
+                    </div>
+    
+                </section>
+            </article>
+            
+            <!-- destacar as principais funcionalidades do totem interativo -->
+            <article>
+                <section id="carateristicas-produto">
+
+                    <div id="titulo-caracteristica">
+                        <h2>Características do produto</h2>
+                        <p>Conheça um pouco sobre as qualidades do nossa tecnologia que chegou para inovar a forma como as pessoas navegam pelas estações!</p>
+                    </div>
+    
+                    <div id="caracteristicas">
+                        <div class="caracteristica">
+    
+                            <picture>
+    
+                                <source srcset="img/icon1-caracteristica.png" media="(min-width: 1200px)">
+                                <source srcset="img/icon1-caracteristica.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                <source srcset="img/icon1-caracteristica.png" media="(min-width: 768px) and (max-width: 991px)">
+                                <source srcset="img/icon1-caracteristica.png" media="(min-width: 600px) and (max-width: 767px)">
+                                <source srcset="img/icon1-caracteristica.png" media="(min-width: 340px) and (max-width: 599px)">
+                                <img src="" alt="Icone do Googel tradutor" alt="Icone do Googel tradutor">
+    
+                            </picture>
+                            <h3>Tradução para o Inglês</h3>
+                            <p>Precisa de ajuda para se comunicar em inglês? Nosso totem oferece tradução instantânea de palavras e frases, facilitando sua viagem</p>
+                        </div>
+                        <div class="caracteristica">
+    
+                            <picture>
+    
+                                <source srcset="img/icon2-caracteristica.png" media="(min-width: 1200px)">
+                                <source srcset="img/icon2-caracteristica.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                <source srcset="img/icon2-caracteristica.png" media="(min-width: 768px) and (max-width: 991px)">
+                                <source srcset="img/icon2-caracteristica.png" media="(min-width: 600px) and (max-width: 767px)">
+                                <source srcset="img/icon2-caracteristica.png" media="(min-width: 340px) and (max-width: 599px)">
+                                <img src="" alt="Icone de mapa" title="Icone de mapa">
+    
+                            </picture>
+                            <h3>Rota de estações</h3>
+                            <p>Encontre a rota mais rápida e fácil para chegar ao seu destino. Nosso totem te guia por todas as estações, passo a passo</p>
+    
+                        </div>
+                        <div class="caracteristica">
+    
+                            <picture>
+    
+                                <source srcset="img/icon3-caracteristica.png" media="(min-width: 1200px)">
+                                <source srcset="img/icon3-caracteristica.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                <source srcset="img/icon3-caracteristica.png" media="(min-width: 768px) and (max-width: 991px)">
+                                <source srcset="img/icon3-caracteristica.png" media="(min-width: 600px) and (max-width: 767px)">
+                                <source srcset="img/icon3-caracteristica.png" media="(min-width: 340px) and (max-width: 599px)">
+                                <img src="" alt="Icone de uma camera" title="Icone de uma camera">
+    
+                            </picture>
+                            <h3>Pontos turísticos</h3>
+                            <p>Explore a cidade com facilidade! O totem te mostra a rota mais rápida para chegar aos principais pontos turísticos</p>
+                        </div>
+                    </div>
+    
+                </section>
+            </article>
+            
+            <!-- demonstrar os benefícios do totem interativo para as empresas de transporte público. -->
+            <article>
+                <section id="beneficios">
+
+                    <div class="conteudo-texto beneficios">
+                        <h2>Por que ter um totem?</h2>
+                        <p>Com um totem, você pode transformar a experiência de seus passageiros e elevar a qualidade do seu serviço de transporte público.</p>
+    
+                        <div class="beneficio">
+                            
+                            <img src="img/icon-qualidade.png" alt="Ícone 1">
+                            <h3>Prover a inclusão</h3>
+                         
+                        </div>
+                        <div class="beneficio">
+                            <img src="img/icon-qualidade.png" alt="Ícone 1">
+                            <h3>Otimize a operação</h3>
+                        </div>
+                        <div class="beneficio">
+                            <img src="img/icon-qualidade.png" alt="Ícone 1">
+                            <h3>Melhore a experiência do usuário</h3>
+                        </div>
+    
+                    </div>
+                    <div class="conteudo-imagem img-section">
+    
+                        <picture>
+    
+                            <source srcset="img/viasmart_reuniao.png" media="(min-width: 1200px)">
+                            <source srcset="img/viasmart_reuniao.png" media="(min-width: 992px) and (max-width: 1199px)">
+                            <source srcset="img/viasmart_reuniao.png" media="(min-width: 768px) and (max-width: 991px)">
+                            <source srcset="img/viasmart_reuniao.png" media="(min-width: 600px) and (max-width: 767px)">
+                            <source srcset="img/viasmart_reuniao.png" media="(min-width: 340px) and (max-width: 599px)">
+                            <img src="" alt="Imagem de uma reunião" title="Imagem de uma reunião">
+    
+                        </picture>
+    
+                    </div>
+    
+                </section>
+            </article>
+            
+
+            <footer>
+                <div id="footer-conteudo">
+                    <div id="contato">
+                        <h4>Contato</h4>
+                        <p>Email: info@viamart.com.br</p>
+                        <p>Telefone: (11) 99999-9999</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/scriptmenu.js"></script>
+</body>
+</html>

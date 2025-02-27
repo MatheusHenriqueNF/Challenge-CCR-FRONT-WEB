@@ -1,0 +1,111 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #historia-empresa{
+        margin-top: 60px;
+        padding-top: 150px;
+    }
+
+    #pensamento-empresa{
+        padding-top: 30px;
+    }
+
+
+    #historia-empresa h2, #pensamento-empresa h2{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .img-section img{
+        width: 450px;
+        height: 297px;
+        margin-top: -80px;
+        margin-left: 20px;
+    }
+
+    .esquerda{
+        margin-top:  -15px;
+    }
+
+    #qualidade-empresa{
+        height: 400px;
+        background-color: #F0F2F5;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    #titulo-qualidade{
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        display: flex;
+    }
+
+    #barra-texto{
+        width: 4px;
+        height: 100px;
+        background-color: #243E63;
+        display: flex;
+    }
+
+    #conteiner-texto {
+        width: 100%;
+        margin-left: 10px; 
+        flex-direction: column;
+    }
+
+    #conteiner-texto h2{
+        margin-top:-10px;
+        
+    }
+
+    #conteiner-texto p{
+        margin-top: -20px;
+        margin-left: 3px;
+    }
+
+    .conteiner-qualidade{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .qualidade-item{
+        width: 45%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .qualidade-item .qualidade-icon{
+        width: 35px;
+        height: 30px;
+    }
+
+    .qualidade-icon img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    .qualidade-item h3{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .qualidade-item p{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .qualidade-esquerda{
+        padding-left: 20px;
+        margin-left: 70px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+}

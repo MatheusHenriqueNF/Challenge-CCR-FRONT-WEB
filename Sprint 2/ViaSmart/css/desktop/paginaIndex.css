@@ -1,0 +1,112 @@
+@media (min-width: 1200px) {
+    #vantagens{
+        height: 500px;
+        display: block;
+  
+    }
+ 
+    #content-dados, #content-vantagens{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        gap: 110px;      
+    }
+ 
+    .informacao, .vantagem{
+        width: 33%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacao p{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4rem;
+    }
+ 
+    .informacao span{
+        font-size: 65px;
+        color: #2B63A9;
+        display: flex;
+    }
+ 
+    #vantagens{
+        margin-bottom: 50px;
+    }
+
+    #content-vantagens{
+        height: 250px;
+        padding-top: 0px;
+        gap: 100px;
+    }
+ 
+    .vantagem{
+        width: 350px;
+        height: 250px;
+        text-align: justify;
+        border-radius: 17px;
+        padding: 20px;
+        border: 0.5px solid #f0eded;
+        align-items: start;
+    }
+ 
+    .vantagem h3{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+ 
+    .vantagem p{
+        font-size: 15px;
+        line-height: 130%;        
+        font-weight: 300;
+        line-height: 1.3rem;
+        margin-bottom: 30px;
+    }
+    
+    #conheca-empresa{
+        background-color: #F0F2F5;
+        padding-top: 0;
+    }
+
+    #conheca-empresa, #conheca-produto{
+        height: 440px;
+    }
+
+    #conheca-produto{
+        height: 540px;
+        background-color: #ffffff;
+    }
+
+    #integrantes{     
+        height: 230px;
+        padding: 8px 4%;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+    
+    #integrantes h3{
+        font-size: 22px;
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-weight: 300;
+        color: #243E63;
+    }
+   
+    #content-membro{
+        width: 100%;
+        height: 144px;
+        display: flex;
+        gap: 8px;
+        display: flex;
+    }
+}

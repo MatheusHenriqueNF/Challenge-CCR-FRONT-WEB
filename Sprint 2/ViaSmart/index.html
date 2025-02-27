@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQUERY PARA FAZER O BOTÃO DE MENU MOBILE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- css versão desktop (min-width = 1200px) -->
+    <link rel="stylesheet" href="css/desktop/reset.css">
+    <link rel="stylesheet" href="css/desktop/estilo.css">
+    <link rel="stylesheet" href="css/desktop/header.css">
+    <link rel="stylesheet" href="css/desktop/paginaIndex.css">
+    <link rel="stylesheet" href="css/desktop/footer.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 992px) and (max-width = 1199px) -->
+    <link rel="stylesheet" href="css/laptop/header.css">
+    <link rel="stylesheet" href="css/laptop/estilo.css">
+    <link rel="stylesheet" href="css/laptop/paginaIndex.css">
+    <link rel="stylesheet" href="css/laptop/footer.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 768px) and (max-width = 991px) -->
+    <link rel="stylesheet" href="css/tablet/tablet/header.css">
+    <link rel="stylesheet" href="css/tablet/tablet/estilo.css">
+    <link rel="stylesheet" href="css/tablet/tablet/footer.css">
+    <link rel="stylesheet" href="css/tablet/tablet/paginaIndex.css">
+     <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 600px) and (max-width = 767px) -->
+    <link rel="stylesheet" href="css/phone/header.css">
+    <link rel="stylesheet" href="css/phone/estilo.css">
+    <link rel="stylesheet" href="css/phone/footer.css">
+    <link rel="stylesheet" href="css/phone/paginaIndex.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 340px) and (max-width = 600px) -->
+     <link rel="stylesheet" href="css/small-phone/header.css">
+     <link rel="stylesheet" href="css/small-phone/estilo.css">
+     <link rel="stylesheet" href="css/small-phone/footer.css">
+     <link rel="stylesheet" href="css/small-phone/paginaIndex.css">
+    
+    
+    <title>ViaSmart</title>
+</head>
+ 
+<body>
+ 
+    <div id="wrapper">
+ 
+        <main>
+
+            <!-- sessão onde contém o cabeçalho que permite a navegação entre as páginas. Além do menu, contém uma imagem que descreve o que será o conteúdo da página. -->
+            <section class="carousel">
+                <header>
+                    <nav id="navbar">
+                        <a href="index.html">
+                            <div id="nav_logo">
+                                <div id="logo">
+    
+                                    <picture>
+    
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 1200px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 768px) and (max-width: 991px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 600px) and (max-width: 767px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 340px) and (max-width: 599px)">
+                                        <img src="" alt="Logo da ccr" title="logo ccr">
+    
+                                    </picture>
+    
+                                </div>
+    
+                                <div id="dividir"></div>
+    
+                                <span>ViaSmart</span>
+    
+                            </div>
+                        </a>
+                        <ul id="nav-lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+
+                        <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                    </nav>
+                    
+                    <!-- conteudo do menu quando a pagina estiver com 991px ou menos -->
+                    <div id="mobile_menu">
+                        <ul id="mobile_nav_lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+                    </div>
+ 
+                </header>
+ 
+                <div class="apresentacao-conteudo">
+ 
+                    <picture>
+ 
+                        <source srcset="img/carousel1.png" media="(min-width: 1200px)">
+                        <source srcset="img/carousel1_1199.png" media="(min-width: 992px) and (max-width: 1199px)">
+                        <source srcset="img/carousel1_991.png" media="(min-width: 768px) and (max-width: 991px)">
+                        <source srcset="img/carousel1_767.png" media="(min-width: 600px) and (max-width: 767px)">
+                        <source srcset="img/carousel1_767.png" media="(min-width: 340px) and (max-width: 599px)">
+                        <img src="" alt="Imagem de apresentação do conteúdo da página" title="Imagem de apresentação do conteúdo da página">
+ 
+                    </picture>
+ 
+                    <p class="texto-apresentacao">
+                        A sua segurança é a nossa prioridade <span> ViaSmart </span>
+                    </p>
+ 
+                </div>
+            </section>
+ 
+            <!-- Esta seção tem como objetivo apresentar de forma clara e concisa as principais vantagens e o alcance do serviço -->
+            <section id="vantagens">
+ 
+                <div id="content-dados">
+                    <div class="informacao">
+                        <p>
+                            <span>3</span>
+                            milhões de usuários estão presentes nas estações por dia.
+                        </p>
+ 
+                    </div>
+                    <div class="informacao">
+                        <p>
+                            <span>124</span>
+                            estações de metrôs, trens, VLT e barcas.
+                        </p>
+                    </div>
+                    <div class="informacao">
+                        <p>
+                            <span>220</span>
+                            composições entre trens, metrô e barcas.
+                        </p>
+                    </div>
+                </div>
+ 
+                <div id="content-vantagens">
+                    <div class="vantagem">
+                        <h3>Sustentabilidade</h3>
+                        <p>Acreditamos que a tecnologia pode ser uma força para o bem. A empresa tem a missão de apresentar uma inovação inteligente.
+                        </p>
+                        <a href="empresa.html">Saiba mais</a>
+                    </div>
+                    <div class="vantagem">
+                        <h3>Locomoção</h3>
+                        <p>Acreditamos sempre que a qualidade da experiência do usuário é o centro de um empresa.</p>
+                        <a href="empresa.html">Saiba mais</a>
+                    </div>
+                    <div class="vantagem">
+                        <h3>Personalizado</h3>
+                        <p>Buscamos incluir o máximo de usuário possíveis, independente da sua idade, sexo ou língua.</p>
+                        <a href="empresa.html">Saiba mais</a>
+                    </div>
+                </div>
+ 
+            </section>
+            
+            <!-- O objetivo principal desta seção é apresentar a empresa ao usuário, destacando sua missão, valores e propostas de valor. -->
+            <article>
+                <section id="conheca-empresa">
+
+                
+                    <div class="conteudo-texto">
+    
+                        <h2>Conheça a empresa</h2>
+                        <p>Utilizamos a mais avançada tecnologia para oferecer um serviço de alta qualidade. Com nosso assistente virtual, você tem acesso a um mundo de informações e serviços personalizados, tornando sua viagem mais prática e agradável. Inovação para um transporte público mais inteligente.</p>
+    
+                        <a href="empresa.html">Saiba mais</a>
+    
+                    </div>
+                    <div class="conteudo-imagem">
+    
+                        <picture>
+    
+                            <source srcset="img/conheca-empresa.png" media="(min-width: 1200px)">
+                            <source srcset="img/conheca-empresa.png" media="(min-width: 992px) and (max-width: 1199px)">
+                            <source srcset="img/conheca-empresa.png" media="(min-width: 768px) and (max-width: 991px)">
+                            <source srcset="img/conheca-empresa.png" media="(min-width: 600px) and (max-width: 767px)">
+                            <source srcset="img/conheca-empresa.png" media="(min-width: 340px) and (max-width: 599px)">
+                            <img src="" alt="Imagem da empresa ViaSmart" title="Imagem da empresa ViaSmart">
+    
+                        </picture>
+    
+                    </div>
+    
+                </section>
+            </article>
+            
+            <!-- A seção de código apresentada tem como objetivo principal apresentar o produto de forma clara e concisa ao usuário. Ela utiliza uma imagem e um texto explicativo para destacar os principais benefícios do produto e convidar o usuário a saber mais. -->
+            <article>
+                <section id="conheca-produto">
+
+                    <div class="conteudo-imagem esquerda">
+    
+                        <picture>
+    
+                            <source srcset="img/conheca-produto.png" media="(min-width: 1200px)">
+                            <source srcset="img/conheca-produto.png" media="(min-width: 992px) and (max-width: 1199px)">
+                            <source srcset="img/conheca-produto.png" media="(min-width: 768px) and (max-width: 991px)">
+                            <source srcset="img/conheca-produto.png" media="(min-width: 600px) and (max-width: 767px)">
+                            <source srcset="img/conheca-produto.png" media="(min-width: 340px) and (max-width: 599px)">
+                            <img src="" alt="Imagem ilustrativa do metrô" title="Imagem ilustrativa do metrô" >
+    
+                        </picture>
+    
+                    </div>
+                    <div class="conteudo-texto direita">
+    
+                        <h2>Conheça o produto</h2>
+                        <p>Precisando de ajuda? Conte conosco! Nosso assistente virtual está sempre pronto para te auxiliar, com informações claras e precisas. Planejamos sua viagem com você, para que você possa chegar ao seu destino com tranquilidade e segurança.
+                            <br><br>
+                        Trazemos a inteligência artificial para transformar sua experiência de viagem. Com nosso assistente virtual, você encontra as melhores rotas, horários precisos e informações personalizadas, tudo ao alcance de um toque. Simplificamos sua jornada e garantimos um atendimento rápido e eficiente. Inovamos para conectar você ao seu destino.
+                            </p>
+    
+                        <a href="produto.html">Saiba mais</a>
+    
+                    </div>
+                    
+    
+                </section>
+            </article>
+            
+            <!-- Desenvolvedores Front-end: Matheus Henrique | Desenvolvedor Back-end: Cleyton Enrique -->
+            <section id="integrantes">
+
+                <h3>Nosso Time |</h3>
+                <div id="content-membro">
+                    <div class="membro">
+                        <div class="membro-imagem">
+                            <picture>
+                                <source srcset="img/membro1.jpeg" media="(min-width: 1200px)">
+                                <source srcset="img/membro1.jpeg" media="(min-width: 992px) and (max-width: 1199px)">
+                                <source srcset="img/membro1.jpeg" media="(min-width: 768px) and (max-width: 991px)">
+                                <source srcset="img/membro1.jpeg" media="(min-width: 600px) and (max-width: 767px)">
+                                <source srcset="img/membro1.jpeg" media="(min-width: 340px) and (max-width: 599px)">
+                                <img src="" alt="Imagem do membro 1" title="Imagem do membro 1">
+                            </picture>  
+                        </div>
+                        <div class="membro-texto">
+                            <h4>Matheus Henrique</h4>
+                            <p>Desenvolvedor Front-end</p>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <div class="membro-imagem">
+                            <picture>
+                                <source srcset="img/membro2.jpg" media="(min-width: 1200px)">
+                                <source srcset="img/membro2.jpg" media="(min-width: 992px) and (max-width: 1199px)">
+                                <source srcset="img/membro2.jpg" media="(min-width: 768px) and (max-width: 991px)">
+                                <source srcset="img/membro2.jpg" media="(min-width: 600px) and (max-width: 767px)">
+                                <source srcset="img/membro2.jpg" media="(min-width: 340px) and (max-width: 599px)">
+                                <img src="" alt="Imagem do membro 2" title="Imagem do membro 2">
+                            </picture>  
+                        </div>
+                        <div class="membro-texto">
+                            <h4>Cleyton Enrike</h4>
+                            <p>Desenvolvedor Back-and</p>
+                        </div>
+                    </div>
+                    <div class="membro">
+
+                        <div class="membro-imagem">
+                            <picture>
+                                <source srcset="img/membro3.jpg" media="(min-width: 1200px)">
+                                <source srcset="img/membro3.jpg" media="(min-width: 992px) and (max-width: 1199px)">
+                                <source srcset="img/membro3.jpg" media="(min-width: 768px) and (max-width: 991px)">
+                                <source srcset="img/membro3.jpg" media="(min-width: 600px) and (max-width: 767px)">
+                                <source srcset="img/membro3.jpg" media="(min-width: 340px) and (max-width: 599px)">
+                                <img src="" alt="Imagem do membro 3" title="Imagem do membro 3">
+                            </picture>  
+                        </div>
+                        <div class="membro-texto">
+                            <h4>Matheus Pinheiro</h4>
+                            <p>Desenvolvedor Back-end</p>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+            <footer>
+                <div id="footer-conteudo">
+                    <div id="contato">
+                        <h4>Contato</h4>
+                        <p>Email: info@viamart.com.br</p>
+                        <p>Telefone: (11) 99999-9999</p>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="js/scriptmenu.js"></script>
+
+</body>
+ 
+</html>

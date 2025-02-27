@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQUERY PARA FAZER O BOTÃO DE MENU MOBILE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- css versão desktop (min-width = 1200px) -->
+    <link rel="stylesheet" href="css/desktop/reset.css">
+    <link rel="stylesheet" href="css/desktop/estilo.css">
+    <link rel="stylesheet" href="css/desktop/header.css">
+    <link rel="stylesheet" href="css/desktop/paginaEmpresa.css">
+    <link rel="stylesheet" href="css/desktop/footer.css">
+    <!-- --------------------------------------------- -->
+
+     <!-- css versão desktop (min-width = 992px) and (max-width = 1199px) -->
+     <link rel="stylesheet" href="css/laptop/header.css">
+     <link rel="stylesheet" href="css/laptop/estilo.css">
+     <link rel="stylesheet" href="css/laptop/footer.css">
+     <link rel="stylesheet" href="css/laptop/paginaEmpresa.css">
+     <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 768px) and (max-width = 991px) -->
+     <link rel="stylesheet" href="css/tablet/tablet/header.css">
+     <link rel="stylesheet" href="css/tablet/tablet/estilo.css">
+     <link rel="stylesheet" href="css/tablet/tablet/footer.css">
+     <link rel="stylesheet" href="css/tablet/tablet/paginaEmpresa.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 600px) and (max-width = 767px) -->
+    <link rel="stylesheet" href="css/phone/header.css">
+    <link rel="stylesheet" href="css/phone/estilo.css">
+    <link rel="stylesheet" href="css/phone/footer.css">
+    <link rel="stylesheet" href="css/phone/paginaEmpresa.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 340px) and (max-width = 600px) -->
+    <link rel="stylesheet" href="css/small-phone/header.css">
+    <link rel="stylesheet" href="css/small-phone/estilo.css">
+    <link rel="stylesheet" href="css/small-phone/footer.css">
+    <link rel="stylesheet" href="css/small-phone/paginaEmpresa.css">
+     
+    <title>Sobre a ViaSmart</title>
+</head>
+<body>
+
+    <div id="wrapper">
+ 
+ 
+        <main>
+
+            <!-- sessão onde contém o cabeçalho que permite a navegação entre as páginas. Além do menu, contém uma imagem que descreve o que será o conteúdo da página. -->
+            <section class="carousel">
+                <header>
+                    <nav id="navbar">
+                        <a href="index.html">
+                            <div id="nav_logo">
+                                <div id="logo">
+    
+                                    <picture>
+    
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 1200px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 768px) and (max-width: 991px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 600px) and (max-width: 767px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 340px) and (max-width: 599px)">
+                                        <img src="" alt="Logo da ViaSmart">
+    
+                                    </picture>
+    
+                                </div>
+    
+                                <div id="dividir"></div>
+    
+                                <span>ViaSmart</span>
+    
+                            </div>
+                        </a>
+                        <ul id="nav-lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+
+                        <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                    </nav>
+                    
+                    <!-- conteudo do menu quando a pagina estiver com 991px ou menos -->
+                    <div id="mobile_menu">
+                        <ul id="mobile_nav_lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+                    </div>
+ 
+                </header>
+ 
+ 
+                <div class="apresentacao-conteudo">
+ 
+                    <picture>
+ 
+                        <source srcset="img/carousel2.png" media="(min-width: 1200px)">
+                        <source srcset="img/carousel2_1199.png" media="(min-width: 992px) and (max-width: 1199px)">
+                        <source srcset="img/carousel2_991.png" media="(min-width: 768px) and (max-width: 991px)">
+                        <source srcset="img/carousel2_767.png" media="(min-width: 600px) and (max-width: 767px)">
+                        <source srcset="img/carousel2_767.png" media="(min-width: 340px) and (max-width: 599px)">
+                        <img src="" alt="Imagem da apresentação">
+ 
+                    </picture>
+ 
+                    <p class="texto-apresentacao empresa">
+                        Conheça a revolução <span> ViaSmart </span>
+                    </p>
+ 
+                </div>
+            </section>
+
+            <!-- objetivo narrar a origem e a evolução da empresa ViaSmart. -->
+            <article>
+                <section id="historia-empresa">
+
+                
+                    <div class="conteudo-texto">
+    
+                        <h2>Como surgiu?</h2>
+                        <p>Em 2024, diante dos desafios da mobilidade urbana e impulsionados pela evolução da inteligência artificial, um grupo de visionários fundou a ViaSmart. Nossa jornada começou com a simples, porém poderosa, ideia de conectar pessoas e lugares de forma mais eficiente e personalizada. Observando as dificuldades do dia a dia, buscamos criar soluções que simplificassem a vida das pessoas, oferecendo um serviço de transporte confiável e acessível. A ViaSmart é o resultado da nossa paixão por inovar e transformar a forma como nos movemos pela cidade.</p>
+    
+                        
+    
+                    </div>
+                    <div class="conteudo-imagem img-section">
+    
+                        <picture>
+    
+                            <source srcset="img/trem.png" media="(min-width: 1200px)">
+                            <source srcset="img/trem.png" media="(min-width: 992px) and (max-width: 1199px)">
+                            <source srcset="img/trem.png" media="(min-width: 768px) and (max-width: 991px)">
+                            <source srcset="img/trem.png" media="(min-width: 600px) and (max-width: 767px)">
+                            <source srcset="img/trem.png" media="(min-width: 340px) and (max-width: 599px)">
+                            <img src="" alt="Imagem de um trem" title="Imagem de um trem da linha 8">
+    
+                        </picture>
+    
+                    </div>
+    
+                </section>
+            </article>
+            
+            <!-- tem como objetivo transmitir a visão e os valores da empresa ViaSmart. -->
+            <article>
+                <section id="pensamento-empresa">
+
+                
+                
+                    <div class="conteudo-imagem esquerda ">
+    
+                        <picture>
+    
+                            <source srcset="img/viasmart-tela.png" media="(min-width: 1200px)">
+                            <source srcset="img/viasmart-tela.png" media="(min-width: 992px) and (max-width: 1199px)">
+                            <source srcset="img/viasmart-tela.png" media="(min-width: 768px) and (max-width: 991px)">
+                            <source srcset="img/viasmart-tela.png" media="(min-width: 600px) and (max-width: 767px)">
+                            <source srcset="img/viasmart-tela.png" media="(min-width: 340px) and (max-width: 599px)">
+                            <img src="" alt="Imagem do logo da ViaSmart exbido no telão" title="Imagem do logo da ViaSmart exbido no telão">
+    
+                        </picture>
+    
+                    </div>
+                    <div class="conteudo-texto direita">
+    
+                        <h2>Inovar e revolucionar</h2>
+                        <p>Acreditamos que inovar é o caminho para transformar a forma como as pessoas se movem pelas cidades. Ao abraçar as novas tecnologias e soluções inteligentes, podemos criar um futuro mais sustentável e conectado, onde a mobilidade seja acessível a todos. Nossa jornada começou com a simples, porém poderosa, ideia de conectar pessoas e lugares de forma mais eficiente e personalizada. Com a ViaSmart, você tem muito mais do que um meio de transporte, você tem uma experiência única e exclusiva. Nossa plataforma inteligente utiliza dados e algoritmos avançados para oferecer rotas otimizadas, sugestões de pontos de interesse e até mesmo previsões do tempo. Com a ViaSmart, você ganha tempo, reduz o estresse e vive a cidade de uma forma completamente nova.</p>
+    
+    
+                    </div>
+    
+                </section>
+            </article>
+            
+            <!-- destacar os principais diferenciais e benefícios da ViaSmart. -->
+            <article>
+                <section id="qualidade-empresa">
+
+                    <div id="titulo-qualidade">
+                        <div id="barra-texto"></div>
+                        <div id="conteiner-texto">
+                            <h2>Por que a ViaSmart</h2>
+                            <p>Dúvidas que você pode ter sobre a ViaSmart</p>
+                        </div>
+                    </div>
+    
+                    <div class="conteiner-qualidade">
+                        <div class="qualidade-item">
+                            <div class="qualidade-icon">
+                                <img src="img/icon-qualidade.png" alt="Ícone 1">
+                            </div>
+                            <div class="qualidade-descricao">
+                                <h3>Transforma a forma de locomoção</h3>
+                                <p>Melhora a experiência do usuário nas estações.</p>
+                            </div>
+                        </div>
+                        <div class="qualidade-item qualidade-esquerda">
+                            <div class="qualidade-icon">
+                                <img src="img/icon-qualidade.png" alt="Ícone 2">
+                            </div>
+                            <div class="qualidade-descricao">
+                                <h3>Atendimento Personalizado</h3>
+                                <p>Busca atender todos os usuários das estações.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conteiner-qualidade">
+                        <div class="qualidade-item">
+                            <div class="qualidade-icon">
+                                <img src="img/icon-qualidade.png" alt="Ícone 1">
+                            </div>
+                            <div class="qualidade-descricao">
+                                <h3>Sustentabilidade</h3>
+                                <p>Utiliza novas tecnologias e soluções inteligentes.</p>
+                            </div>
+                        </div>
+                        <div class="qualidade-item qualidade-esquerda">
+                            <div class="qualidade-icon">
+                                <img src="img/icon-qualidade.png" alt="Ícone 2">
+                            </div>
+                            <div class="qualidade-descricao">
+                                <h3>Otimização de Operação</h3>
+                                <p>Melhora no planejamento e tomada de decisões.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </section>
+            </article>
+            
+
+            <footer>
+                <div id="footer-conteudo">
+                    <div id="contato">
+                        <h4>Contato</h4>
+                        <p>Email: info@viamart.com.br</p>
+                        <p>Telefone: (11) 99999-9999</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    <script src="js/scriptmenu.js"></script>
+</body>
+</html>

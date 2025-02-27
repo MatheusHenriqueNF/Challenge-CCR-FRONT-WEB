@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Idioma</title>
+</head>
+<body>
+
+    <div id="wrapper">
+        <main>
+            <div id="container">
+                <div id="botoes" class="btn-topo">
+                    <a href="menu.html">
+                        <div class="btn-navegacao-menu">
+                            <img src="img/icon-seta.png" alt="icone de um seta para  voltar">
+                            <h3>Voltar</h3>
+                        </div>
+                    </a>
+                    <a href="#" onclick="imprimir()">
+                        <div class="btn-navegacao-menu">
+                            <img src="img/icon-impressora.png" alt="icone de uma impressora">
+                            <h3>Impressora</h3>
+                        </div>
+                    </a>
+    
+                </div>
+               
+                <p id="tempo-viagem">Tempo da viagem: 20:00 - 20:26 (26 minutos)</p>
+                <input type="text" name="origem-rota" id="origem-rota" class="informacao-rota" value="Origem: Vila Mariana - Linha 1 - Azul" readonly>
+                <input type="text" name="resultado-rota" id="resultado-rota" class="informacao-rota" value="Destino: Oscar Freire - Linha 5 - Amarela" readonly>
+
+                <div class="linha-metro">
+                    <div class="estacao estacao-importante">
+                        <span class="horario">20:00</span>
+                        <span class="circulo"></span>
+                        <span class="descricao">Embarque sentido Tucuruvi - Linha 1 - Azul</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Ana Rosa</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Paraíso</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Vergueiro</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">São Joaquim</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Japão-Liberdade</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Sé</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">São Bento</span>
+                    </div>
+
+                    <div class="estacao estacao-importante">
+                        <span class="horario">20:16</span>
+                        <span class="circulo"></span>
+                        <span class="descricao">Desembarque na Luz - Linha 3 - Vermelha</span>
+                    </div>
+                    <div class="estacao estacao-importante">
+                        <span class="horario">20:16</span>
+                        <span class="circulo"></span>
+                        <span class="descricao">Embarque sentido Vila Sônia - Linha 5 - Amarela</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">República</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Higienópolis-Mackenzie</span>
+                    </div>
+                    <div class="estacao parada">
+                        <span class="circulo"></span>
+                        <span class="nome-estacao">Paulista</span>
+                    </div>
+                    <div class="estacao estacao-importante">
+                        <span class="horario">20:26</span>
+                        <span class="circulo"></span>
+                        <span class="descricao">Desembarque na Oscar Freire - Linha 5 - Amarela</span>
+                    </div>
+
+                    </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

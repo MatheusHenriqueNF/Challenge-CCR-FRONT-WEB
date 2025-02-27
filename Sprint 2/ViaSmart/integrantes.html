@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQUERY PARA FAZER O BOTÃO DE MENU MOBILE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- css versão desktop (min-width = 1200px) -->
+    <link rel="stylesheet" href="css/desktop/reset.css">
+    <link rel="stylesheet" href="css/desktop/estilo.css">
+    <link rel="stylesheet" href="css/desktop/header.css">
+    <link rel="stylesheet" href="css/desktop/paginaIntegrante.css">
+    <link rel="stylesheet" href="css/desktop/footer.css">
+    <!-- --------------------------------------------- -->
+
+     <!-- css versão desktop (min-width = 992px) and (max-width = 1199px) -->
+     <link rel="stylesheet" href="css/laptop/header.css">
+     <link rel="stylesheet" href="css/laptop/estilo.css">
+     <link rel="stylesheet" href="css/laptop/footer.css">
+     <link rel="stylesheet" href="css/laptop/paginaIntegrante.css">
+
+     <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 768px) and (max-width = 991px) -->
+    <link rel="stylesheet" href="css/tablet/tablet/header.css">
+    <link rel="stylesheet" href="css/tablet/tablet/estilo.css">
+    <link rel="stylesheet" href="css/tablet/tablet/footer.css">
+    <link rel="stylesheet" href="css/tablet/tablet/paginaIntegrante.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 600px) and (max-width = 767px) -->
+    <link rel="stylesheet" href="css/phone/header.css">
+    <link rel="stylesheet" href="css/phone/estilo.css">
+    <link rel="stylesheet" href="css/phone/footer.css">
+    <link rel="stylesheet" href="css/phone/paginaIntegrante.css">
+    <!-- --------------------------------------------- -->
+
+    <!-- css versão desktop (min-width = 340px) and (max-width = 600px) -->
+    <link rel="stylesheet" href="css/small-phone/header.css">
+    <link rel="stylesheet" href="css/small-phone/estilo.css">
+    <link rel="stylesheet" href="css/small-phone/footer.css">
+    <link rel="stylesheet" href="css/small-phone/paginaIntegrante.css">
+
+
+    <title>Sobre os desenvolvedores</title>
+</head>
+<body>
+
+    
+    <div id="wrapper"> 
+        <main>
+            <!-- sessão onde contém o cabeçalho que permite a navegação entre as páginas. Além do menu, contém uma imagem que descreve o que será o conteúdo da página. -->
+            <section class="carousel">
+                <header>
+                    <nav id="navbar">
+                        <a href="index.html">
+                            <div id="nav_logo">
+                                <div id="logo">
+    
+                                    <picture>
+    
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 1200px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 992px) and (max-width: 1199px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 768px) and (max-width: 991px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 600px) and (max-width: 767px)">
+                                        <source srcset="img/logo_ccr.png" media="(min-width: 340px) and (max-width: 599px)">
+                                        <img src="" alt="Logo da ViaSmart">
+    
+                                    </picture>
+    
+                                </div>
+    
+                                <div id="dividir"></div>
+    
+                                <span>ViaSmart</span>
+    
+                            </div>
+                        </a>
+                        <ul id="nav-lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+                        <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                    </nav>
+                    
+                    <!-- conteudo do menu quando a pagina estiver com 991px ou menos -->
+                    <div id="mobile_menu">
+                        <ul id="mobile_nav_lista">
+                            <a href="index.html" class="nav-item">
+                                <li>Home</li>
+                            </a>
+                            <a href="empresa.html" class="nav-item">
+                                <li>Empresa</li>
+                            </a>
+                            <a href="produto.html" class="nav-item">
+                                <li>Aplicação</li>
+                            </a>
+                            <a href="integrantes.html" class="nav-item">
+                                <li>Sobre o Grupo</li>
+                            </a>
+                        </ul>
+                    </div>
+ 
+                </header>
+ 
+                <div class="apresentacao-conteudo">
+ 
+                    <picture>
+ 
+                        <source srcset="img/carousel4.png" media="(min-width: 1200px)">
+                        <source srcset="img/carousel4_1199.png" media="(min-width: 992px) and (max-width: 1199px)">
+                        <source srcset="img/carousel4_991.png" media="(min-width: 768px) and (max-width: 991px)">
+                        <source srcset="img/carousel4_767.png" media="(min-width: 600px) and (max-width: 767px)">
+                        <source srcset="img/carousel4_767.png" media="(min-width: 340px) and (max-width: 599px)">
+                        <img src="" alt="Imagem de apresentação do conteúdo da página" title="Imagem de apresentação do conteúdo da página">
+ 
+                    </picture>
+ 
+                    <p class="texto-apresentacao empresa">
+                        Desenvolvedores da <span> ViaSmart </span>
+                    </p>
+ 
+                </div>
+            </section>
+
+            <!-- Desenvolvedores da ViaSmart -->
+            <section id="integrantes">
+                <div class="conteudo-texto">
+                    <h2>Nossa equipe</h2>
+                </div>
+                
+                <div class="integrantes-conteudo">
+                    <div id="integrante-item">
+                        <div class="integrante-foto">
+                            <img src="img/membro1.jpeg" alt="Foto do Integrante 1" title="Foto do Integrante 1">
+                        </div>
+                        <div class="divisao">
+                            <div class="circulo"></div>
+                            <div class="linha"></div>
+                        </div>
+                        
+                        <div class="integrante-descricao">
+                            <h3>Matheus Henrique Nascimento de Freitas</h3>
+                            <div class="informacao-integrante">
+                                
+                                <div class="rm"><p>RM</p></div>
+                                <div class="serie-rm"><p>1TDSQ</p> <p>560442</p></div>
+                                    
+                            </div>
+                               
+                            <p>Desenvolvedor de Front-end e Banco de Dados. <br> 
+                                “Acredito que o trabalho em equipe e a comunicação eficaz são essenciais para o sucesso de qualquer projeto.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integrantes-conteudo">
+                    <div id="integrante-item">
+                        <div class="integrante-foto">
+                            <img src="img/membro2.jpg" alt="Foto do Integrante 2" title="Foto do Integrante 2">
+                        </div>
+                        <div class="divisao">
+                            <div class="circulo"></div>
+                            <div class="linha"></div>
+                        </div>
+                        
+                        <div class="integrante-descricao">
+                            <h3>Cleyton Enrike de Oliveira</h3>
+                            <div class="informacao-integrante">
+                                
+                                <div class="rm"><p>RM</p></div>
+                                <div class="serie-rm"><p>1TDSQ</p> <p>560485</p></div>
+                                    
+                            </div>
+                               
+                            <p>Desenvolvedor de Front-end e Banco de Dados. <br> 
+                                “Acredito que o trabalho em equipe e a comunicação eficaz são essenciais para o sucesso de qualquer projeto.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integrantes-conteudo">
+                    <div id="integrante-item">
+                        <div class="integrante-foto">
+                            <img src="img/membro3.jpg" alt="Foto do Integrante 3" title="Foto do Integrante 3">
+                        </div>
+                        <div class="divisao">
+                            <div class="circulo"></div>
+                            
+                        </div>
+                        
+                        <div class="integrante-descricao">
+                            <h3>Matheus Pinheiro Ermacora Martin</h3>
+                            <div class="informacao-integrante">
+                                
+                                <div class="rm"><p>RM</p></div>
+                                <div class="serie-rm"><p>1TDSQ</p> <p>557720</p></div>
+                                    
+                            </div>
+                               
+                            <p>Desenvolvedor de Front-end e Banco de Dados. <br> 
+                                “Acredito que o trabalho em equipe e a comunicação eficaz são essenciais para o sucesso de qualquer projeto.”</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formulário de Contato -->
+            <section id="frm-contato">
+                <h2>Formulário de Contato</h2>
+                <form id="formulario-contato">
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <span class="mensagem-erro" id="erro-nome"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="mensagem-erro" id="erro-email"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                        <span class="mensagem-erro" id="erro-descricao"></span>
+                    </div>
+                    <button type="submit" disabled>Enviar</button>
+                </form>
+            </section>
+
+            <footer>
+                <div id="footer-conteudo">
+                    <div id="contato">
+                        <h4>Contato</h4>
+                        <p>Email: info@viamart.com.br</p>
+                        <p>Telefone: (11) 99999-9999</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/scriptmenu.js"></script>
+    <script src="js/validadar.js"></script>
+</body>
+</html>

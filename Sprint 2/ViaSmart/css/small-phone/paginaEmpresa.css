@@ -1,0 +1,116 @@
+@media (min-width: 340px) and (max-width: 599px) {
+
+    #historia-empresa{
+        height: 702px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    #pensamento-empresa{
+        height: 760px;
+        padding-top: 30px;
+    }
+
+
+    #historia-empresa h2, #pensamento-empresa h2{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .img-section img{
+        width: 260px;
+        height: 190px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .esquerda{
+        margin-top: -15px;
+    }
+
+    #qualidade-empresa{
+        height: 700px;
+        background-color: #F0F2F5;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-qualidade{
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        display: flex;
+    }
+
+    #barra-texto{
+        width: 4px;
+        height: 100px;
+        background-color: #243E63;
+        display: flex;
+    }
+
+    #conteiner-texto {
+        width: 100%;
+        margin-left: 10px; 
+        flex-direction: column;
+    }
+
+    #conteiner-texto h2{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        
+    }
+
+    #conteiner-texto p{
+        margin-top: -20px;
+        margin-left: 3px;
+    }
+
+    .conteiner-qualidade{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .qualidade-item{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        order: 2;
+    }
+
+    .qualidade-item .qualidade-icon{
+        width: 35px;
+        height: 30px;
+    }
+
+    .qualidade-icon img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    .qualidade-item h3{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .qualidade-item p{
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .qualidade-esquerdo{
+        order: 1;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+}
