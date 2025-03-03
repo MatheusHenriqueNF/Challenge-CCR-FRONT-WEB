@@ -15,8 +15,8 @@ const Informacao = () => {
 
             <div className="flex justify-center items-center pt-16">
                 <div className="w-full h-[70vh] flex justify-center items-center flex-wrap gap-25">
-                <Link href={"/Consulta"}><Card titulo="Horário" imagem="/image/clock.png" descricao="Icone"/></Link>
-                <Link href={"/Informacao"}><Card titulo="Falar com Alguém" imagem="/image/user.png" descricao="Icone"/></Link>
+                <Link href={"/Horario"}><Card titulo="Horário" imagem="/image/clock.png" descricao="Icone"/></Link>
+                <Link href={"/Solicitacao"}><Card titulo="Falar com Alguém" imagem="/image/user.png" descricao="Icone"/></Link>
                 </div>
             </div>
 

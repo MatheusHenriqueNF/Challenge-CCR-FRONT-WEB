@@ -15,7 +15,7 @@ const Idioma = ()=>{
                 </Link>
                 <div className="flex justify-center items-center pt-16">
                     <div className="w-1/2 h-1/2 flex justify-center items-center flex-wrap gap-25">
-                        <CardIdioma imagem="/image/ingles.png" titulo="English"/>
+                        <Link href={"/Erro"}><CardIdioma imagem="/image/ingles.png" titulo="English"/>,</Link>
                         <Link href={"/Menu"}><CardIdioma imagem="/image/portugues.png" titulo="Português"/></Link>
                     </div>
                 </div>

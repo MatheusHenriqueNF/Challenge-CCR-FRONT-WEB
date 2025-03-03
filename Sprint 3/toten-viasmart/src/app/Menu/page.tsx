@@ -17,7 +17,7 @@ const Menu = () => {
                     <div className="w-full h-[70vh] flex justify-center items-center flex-wrap gap-25">
                        <Link href={"/Consulta"}><Card titulo="Consultar Rota" imagem="/image/map.png" descricao="Icone"/></Link>
                        <Link href={"/Informacao"}><Card titulo="Informações de Linha" imagem="/image/ajuda.png" descricao="Icone"/></Link>
-                       <Link href={"/Ajuda"}><Card titulo="Ajuda" imagem="/image/users.png" descricao="Icone"/></Link>
+                       <Link href={"/Erro"}><Card titulo="Ajuda" imagem="/image/users.png" descricao="Icone"/></Link>
                     </div>
                 </div>
 
