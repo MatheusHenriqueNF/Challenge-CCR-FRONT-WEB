@@ -15,10 +15,8 @@ export default function RootLayout({
     <html lang="pt-br">
       
       <body>
-        <main className="w-full h-full">
-
-        
-        {children}
+        <main className="w-full h-screen">
+          {children}
         </main>
       </body>
     </html>
