@@ -1,5 +1,5 @@
-import Logo from "../components/Logo/logo";
-import Preencher from "../components/PreenchimentoDados/preenchimentodados";
+import Logo from "../../components/Logo/logo";
+import Preencher from "../../components/PreenchimentoDados/preenchimentodados";
 
 
 export default function Home() {
