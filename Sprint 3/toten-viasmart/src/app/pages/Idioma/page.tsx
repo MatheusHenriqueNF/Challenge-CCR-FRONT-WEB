@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Botao from "../components/Botao/botao";
-import CardIdioma from "../components/Cards_Idioma/cardsIdioma";
+import Botao from "../../components/Botao/botao";
+import CardIdioma from "../../components/Cards_Idioma/cardsIdioma";
 
 
 const Idioma = ()=>{
@@ -15,8 +15,8 @@ const Idioma = ()=>{
                 </Link>
                 <div className="flex justify-center items-center pt-16">
                     <div className="w-1/2 h-1/2 flex justify-center items-center flex-wrap gap-25">
-                        <Link href={"/Erro"}><CardIdioma imagem="/image/ingles.png" titulo="English"/>,</Link>
-                        <Link href={"/Menu"}><CardIdioma imagem="/image/portugues.png" titulo="Português"/></Link>
+                        <Link href={"/pages/Erro"}><CardIdioma imagem="/image/ingles.png" titulo="English"/>,</Link>
+                        <Link href={"/pages/Menu"}><CardIdioma imagem="/image/portugues.png" titulo="Português"/></Link>
                     </div>
                 </div>
 

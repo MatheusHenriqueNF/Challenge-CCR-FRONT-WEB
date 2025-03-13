@@ -7,15 +7,15 @@ type BotaoProps = {
   corTexto?: string;
 };
 
-const Botao: React.FC<BotaoProps> = ({
+const BotaoRota: React.FC<BotaoProps> = ({
   titulo = "Titulo",
   clicando,
   cor = "#3B48EF",
-  corTexto = "white"
+  corTexto = "white" 
 }) => {
   return (
     <div
-      className="w-40 h-12 rounded-2xl flex justify-center items-center font-semibold cursor-pointer"
+      className="w-100 h-20 rounded-2xl flex justify-center items-center font-semibold cursor-pointer text-3xl"
       style={{ backgroundColor: cor,
                color: corTexto    
        }} 
@@ -26,4 +26,4 @@ const Botao: React.FC<BotaoProps> = ({
   );
 };
 
-export default Botao;
+export default BotaoRota;
