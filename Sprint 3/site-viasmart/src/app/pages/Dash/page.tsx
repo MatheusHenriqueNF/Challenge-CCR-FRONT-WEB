@@ -29,7 +29,8 @@ const Dash = () => {
             <BotaoFiltro titulo="Filtrar: Normal"/>
             <BotaoFiltro titulo="Filtrar: Pausada"/>
             <br />
-            <BotaoFiltro titulo="Cadastrar Usuário"/>
+            <Link href={"/pages/Cadastro"}><BotaoFiltro titulo="Cadastrar Usuário"/></Link>
+            
         </div>
 
         <div className="w-full h-100 flex justify-center items-center mt-4 p-4 rounded-xl">
