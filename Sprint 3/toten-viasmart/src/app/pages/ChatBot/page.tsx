@@ -6,7 +6,7 @@ const ChatBot = () => {
         <>
             
                 <div className="w-full h-screen bg-white flex flex-col justify-center items-center">
-                <Link href={"/Menu"}>
+                <Link href={"/pages/Menu"}>
                     <div className="w-full h-20 flex justify-end items-center pr-12">
                         <Botao titulo="Voltar" cor="#3B48EF"/>
                     </div>
@@ -19,7 +19,7 @@ const ChatBot = () => {
                         <div className="w-full h-15 flex flex-col justify-center mb-5.5">
                             <div className="w-[400] h-15 bg-gray-200 rounded-4xl"></div>
                         </div>
-                        
+
                         <div className="w-full h-15 flex flex-col justify-center items-end mb-5.5 ">
                             <div className="w-[400] h-15 bg-gray-200 rounded-4xl"></div>
                         </div>

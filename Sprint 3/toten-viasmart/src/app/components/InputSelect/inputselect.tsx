@@ -2,16 +2,16 @@
 import { useState, useRef, useEffect } from "react";
 
 const options = [
-  "Apple",
-  "Banana",
-  "Cherry",
-  "Date",
-  "Grape",
-  "Lemon",
-  "Mango",
-  "Orange",
-  "Peach",
-  "Strawberry",
+    'Jabaquara', 'Conceição', 'São Judas', 'Saúde', 'Praça da Árvore', 
+    'Santa Cruz', 'Vila Mariana', 'Ana Rosa', 'Paraíso', 'Vergueiro', 
+    'São Joaquim', 'Liberdade', 'Sé', 'São Bento', 'Luz', 'Tiradentes', 
+    'Armênia', 'Portuguesa-Tietê', 'Carandiru', 'Santana', 'Jardim São Paulo-Ayrton Senna', 
+    'Parada Inglesa', 'Tucuruvi', 'Vila Prudente', 'Tamanduateí', 'Sacomã', 
+    'Alto do Ipiranga', 'Santos-Imigrantes', 'Chácara Klabin', 'Brás', 'Pedro II', 
+    'Bresser-Mooca', 'Belém', 'Tatuapé', 'Carrão', 'Penha', 'Vila Matilde', 
+    'Guilhermina-Esperança', 'Patriarca', 'Artur Alvim', 'Corinthians-Itaquera', 
+    'Butantã', 'Pinheiros', 'Faria Lima', 'Paulista', 'Higienópolis-Mackenzie', 
+    'República', 'Santa Cecília', 'Marechal Deodoro', 'Palmeiras-Barra Funda',
 ];
 
 interface InputFilterProps {
@@ -47,7 +47,7 @@ export default function InputFilter({ placeholderText }: InputFilterProps) {
 
   return (
     <div className="flex flex-col justify-center items-center gap-4 p-6 relative">
-      <div className="relative w-[1500] h-[30] border border-[#3B48EF] rounded-full bg-white p-20 flex items-center text-3xl">
+      <div className="relative w-[1500] h-[30]  border border-[#3B48EF] rounded-full bg-white p-20 flex items-center text-3xl">
         <input
           ref={inputRef}
           type="text"

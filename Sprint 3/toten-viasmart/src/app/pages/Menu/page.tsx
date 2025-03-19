@@ -6,12 +6,18 @@ const Menu = () => {
     return(
         <>
             <div className="w-full h-screen bg-white ">
-
-                <Link href={"/pages/Idioma"}>
-                    <div className="w-full h-20 flex justify-end items-center pr-12">
-                        <Botao titulo="Voltar" cor="#3B48EF"/>
-                    </div>
-                </Link>
+                <div className="w-full h-20 flex justify-end items-end">
+                    <Link href={"/pages/Idioma"}>
+                        <div className="w-full h-20 flex justify-end items-center pr-12">
+                            <Botao titulo="Voltar" cor="#3B48EF"/>
+                        </div>
+                    </Link>
+                    <Link href={"/pages/Grupo"}>
+                        <div className="w-full h-20 flex justify-end items-center pr-12">
+                            <Botao titulo="Grupo" cor="#3B48EF"/>
+                        </div>
+                    </Link>
+                </div>
 
                 <div className="flex justify-center items-center pt-16">
                     <div className="w-full h-[70vh] flex justify-center items-center flex-wrap gap-25">

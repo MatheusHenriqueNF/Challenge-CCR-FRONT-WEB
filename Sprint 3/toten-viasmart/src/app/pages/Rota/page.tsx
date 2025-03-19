@@ -2,6 +2,7 @@ import Botao from "@/app/components/Botao/botao";
 import BotaoRota from "@/app/components/BotaoRota/botaorota";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 
 export default function MetroRoute() {
@@ -17,22 +18,16 @@ export default function MetroRoute() {
         </div>
     </Link>
       
-      <div className="p-5 relative flex flex-col justify-center items-center my-12 bg-amber-300">
-        <div className="flex items-center relative bg-amber-600">
-          {["Vila Mariana", "Ana Rosa", "Paraíso", "Vergueiro", "São Joaquim", "Liberdade", "Sé", "Pedro II", "Brás", "Bresser - Mooca"].map((station, index) => (
-            <div key={index} className="relative flex flex-col items-center">
-              <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-              <span className="text-sm text-blue-500 transform -rotate-30 whitespace-nowrap">
-                {station}
-              </span>
-              {index < 9 && (
-                <div className="w-10 h-1 bg-blue-600 absolute top-1/2 left-full -translate-y-1/2"></div>
-              )}
-            </div>
-          ))}
-        </div>
+      <div className="p-5 relative flex flex-col justify-center items-center">
 
-        <BotaoRota titulo="Imprimir"/>
+        <div className="w-full h-160">
+
+          <Image className="object-cover" src="/image/rota.png" alt="imagem ilustrativa" width={3000} height={200} />
+
+        </div>
+        
+        <Link href={"/pages/Imprimir"}><BotaoRota titulo="Imprimir"/></Link>
+        
       </div>
 
       

@@ -26,7 +26,8 @@ const Consulta = () => {
                     <br />
                     <InputFilter placeholderText="Selecione a sua estação destino"/>
                     <br />
-                    <BotaoRota titulo="Mostrar rota"/>
+                    <Link href={"/pages/Rota"}><BotaoRota titulo="Mostrar rota"/></Link>
+                    
                 </form>
             </div>
          </div>
