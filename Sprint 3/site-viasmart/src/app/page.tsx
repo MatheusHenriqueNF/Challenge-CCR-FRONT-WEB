@@ -9,8 +9,8 @@ export default function Home() {
                 titulo="Entrar"
                 corTexto="#3B48EF"
                 inputs={[
-                    { label: "Usuário", placeholder: "Digite seu usuário" },
-                    { label: "Senha", placeholder: "Digite sua senha" }
+                    { label: "Usuário", placeholder: "Digite seu usuário", name: "usuario" },
+                    { label: "Senha", placeholder: "Digite sua senha", name: "senha", type: "password" }
                 ]}
                 botaoTitulo="Entrar"
             />

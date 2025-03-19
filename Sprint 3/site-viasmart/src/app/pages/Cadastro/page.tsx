@@ -10,10 +10,10 @@ export default function Home() {
         titulo="Cadastrar"
         corTexto="#3B48EF"
         inputs={[
-          { label: "Usuário", placeholder: "Digite o usuário" },
-          { label: "CPF", placeholder: "Digite o CPF" },
-          { label: "Senha", placeholder: "Digite a senha" },
-          { label: "Senha", placeholder: "Confirme a senha" }
+          { label: "Usuário", placeholder: "Digite o usuário",name: "usuario" },
+          { label: "CPF", placeholder: "Digite o CPF",name:"cpf" },
+          { label: "Senha", placeholder: "Digite a senha",name:"senha" },
+          { label: "Senha", placeholder: "Confirme a senha",name:"confirmarSenha" },
         ]}
         botaoTitulo="Cadastrar"
       />

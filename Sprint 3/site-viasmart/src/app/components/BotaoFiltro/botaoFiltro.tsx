@@ -15,13 +15,13 @@ const BotaoFiltro: React.FC<BotaoProps> = ({
 }) => {
   return (
     <div
-      className="w-full h-[50] py-2 mb-2 rounded-2xl text-center cursor-pointer"
+    className="w-3/4 sm:h-[60px] md:h-[70px] lg:h-[50px] py-2 mb-2 rounded-2xl text-center cursor-pointer"
       style={{ backgroundColor: cor,
                color: corTexto    
        }} 
       onClick={clicando}
     >
-      <p className="text-2xl font-light">{titulo}</p>
+      <p className="text-lg sm:h-[60px] md:text-xl font-light">{titulo}</p>
     </div>
   );
 };
