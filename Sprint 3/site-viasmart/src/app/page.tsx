@@ -8,6 +8,7 @@ export default function Home() {
             <Preencher
                 titulo="Entrar"
                 corTexto="#3B48EF"
+                tipo="login"
                 inputs={[
                     { label: "Usuário", placeholder: "Digite seu usuário", name: "usuario" },
                     { label: "Senha", placeholder: "Digite sua senha", name: "senha", type: "password" }

@@ -9,8 +9,9 @@ export default function Home() {
       <Preencher
         titulo="Cadastrar"
         corTexto="#3B48EF"
+        tipo="cadastro"
         inputs={[
-          { label: "Usuário", placeholder: "Digite o usuário",name: "usuario" },
+          { label: "Usuário", placeholder: "Digite o usuário",name: "usuarioCad" },
           { label: "CPF", placeholder: "Digite o CPF",name:"cpf" },
           { label: "Senha", placeholder: "Digite a senha",name:"senha" },
           { label: "Senha", placeholder: "Confirme a senha",name:"confirmarSenha" },

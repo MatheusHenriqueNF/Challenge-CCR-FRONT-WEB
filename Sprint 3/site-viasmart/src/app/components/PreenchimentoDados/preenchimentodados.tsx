@@ -16,13 +16,15 @@ type PreencherProps = {
     corTexto?: string;
     inputs: InputConfig[];
     botaoTitulo: string;
+    tipo: "login" | "cadastro";  // NOVA PROP
 };
 
 const Preencher: React.FC<PreencherProps> = ({
     titulo = "Título",
     corTexto = "green",
     inputs = [],
-    botaoTitulo = "Enviar"
+    botaoTitulo = "Enviar",
+    tipo
 }) => {
     const router = useRouter(); // Hook para redirecionamento
 
@@ -49,8 +51,7 @@ const Preencher: React.FC<PreencherProps> = ({
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         let validationErrors: { [key: string]: string } = {};
-
-        // Validação dinâmica baseada nos inputs
+    
         inputs.forEach((input) => {
             if (!formData[input.name] || formData[input.name].trim().length === 0) {
                 validationErrors[input.name] = `${input.label} é obrigatório.`;
@@ -58,26 +59,28 @@ const Preencher: React.FC<PreencherProps> = ({
                 validationErrors[input.name] = "Usuário deve ter pelo menos 3 caracteres.";
             } else if (input.name === "senha" && formData[input.name].length < 6) {
                 validationErrors[input.name] = "A senha deve ter pelo menos 6 caracteres.";
-            } else if(input.name === "cpf" && formData[input.name].length !== 11){
-                validationErrors[input.name] = "CPF em branco.";
-            } else if(input.name === "confirmarSenha" && formData[input.name] !== formData["senha"]){
+            } else if (input.name === "confirmarSenha" && formData[input.name] !== formData["senha"]) {
                 validationErrors[input.name] = "As senhas não conferem.";
             }
         });
-
+    
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
             return;
         }
-
-        // Simulação de validação de credenciais
-        if (formData.usuario === "admin" && formData.senha === "admin123") {
-            router.push("/pages/Dash"); // Redireciona para a página Dash
+    
+        if (tipo === "login") { 
+            // Apenas no login verificamos as credenciais
+            if (formData.usuario === "admin" && formData.senha === "admin123") {
+                router.push("/pages/Dash");
+            } else {
+                setErrors({ geral: "Usuário ou senha inválidos." });
+            }
         } else {
-            setErrors({ geral: "Usuário ou senha inválidos." });
+            // Cadastro: Redireciona para outra página ou exibe mensagem de sucesso
+            console.log("Cadastro realizado com sucesso!", formData);
         }
     };
-
     return (
         <div className="w-[600px] h-[735px] bg-white rounded-r-3xl p-6">
             <h1 className="text-[30px] font-semibold mb-4" style={{ color: corTexto }}>
